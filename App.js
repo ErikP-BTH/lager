@@ -4,14 +4,6 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import warehouse from './assets/warehouse.jpg';
 import Stock from './components/Stock.js';
 
-fetch("https://lager.emilfolino.se/v2/products?api_key=[YOUR_API_KEY]")
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function(result) {
-        // result.data innehåller produkterna kopplat till din API-nyckel
-    });
-
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
